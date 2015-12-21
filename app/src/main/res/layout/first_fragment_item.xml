@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:padding="@dimen/md_keylines"
+
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/list_avator"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_user"
+        />
+
+    <TextView
+        android:id="@+id/list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/md_keylines"
+        android:layout_toRightOf="@id/list_avator"
+        android:text="诛仙"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_title"
+        android:layout_marginLeft="@dimen/md_keylines"
+        android:layout_toRightOf="@id/list_avator"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="简介: 最早连载于幻剑书盟。在大陆由朝华出版社出版，第七本开始转由花山文艺出版社出版。在台湾由小说频道出版"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="@color/medium_grey"
+        android:textSize="18sp"
+        />
+
+</RelativeLayout>

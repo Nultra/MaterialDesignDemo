@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="304dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:foreground="?attr/selectableItemBackground"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/card_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_user_background" />
+
+        <TextView
+            android:id="@+id/card_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@id/card_img"
+            android:layout_marginLeft="16dp"
+            android:text="New"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+
+            />
+
+        <TextView
+            android:id="@+id/card_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_img"
+            android:layout_margin="16dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="The Palais Garnier which locates in Paris was built from 1861 for the Paris Opera."
+            android:textColor="@color/dark_grey"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/action_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_text"
+            android:text="Action"
+            android:textColor="?attr/colorPrimary"
+
+            />
+
+
+        <ImageButton
+            android:id="@+id/button_image"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/card_text"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_menu_share"
+            android:tint="@color/dark_grey" />
+
+        <ImageButton
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/card_text"
+            android:layout_marginRight="50dp"
+            android:layout_toLeftOf="@id/button_image"
+            android:src="@drawable/ic_favorite_black_24dp"
+            android:tint="@color/dark_grey" />
+       </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
